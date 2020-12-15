@@ -2,8 +2,10 @@
 
 require('@code-fellows/supergoose');
 
+const User = require('../model/signin');
 const { server } = require('../server');
 const agent = supergoose(server);
+
 
 
 describe('basic auth', () => {
