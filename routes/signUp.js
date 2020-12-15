@@ -5,8 +5,8 @@ const User = require('../model/signin');
 const router = express.Router();
 // const base64 = require('base-64');
 const bcrypt = require('bcrypt');
-router.use(express.json());
-router.use(express.urlencoded({extended:true}));
+// router.use(express.json());
+// router.use(express.urlencoded({extended:true}));
 
 router.post('/signup', async (req, res) => {
     console.log(req.body);
