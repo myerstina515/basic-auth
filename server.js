@@ -6,6 +6,8 @@ const app = express();
 require('dotenv').config();
 
 // middleware to parse the body
+const express = require('express');
+const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
