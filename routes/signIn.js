@@ -8,9 +8,6 @@ const bcrypt = require('bcrypt');
 
 router.post('/signin', async (req, res) => {
     console.log(req.headers);
-
-    
-  
     // 1. turn the string into an array by splitting on the space (' ')
     // 2. Pop off the last value
     // 3. Decode that encoded string (return user:password)
@@ -46,12 +43,7 @@ router.post('/signin', async (req, res) => {
       } else {
         throw new Error('Invalid User');
       }
-  
     }
     catch (e){ res.status(403).send('you are not allowed')}
-  
-  
   })
-
-
   module.exports = router;
